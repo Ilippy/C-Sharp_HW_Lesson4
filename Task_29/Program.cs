@@ -9,7 +9,7 @@ internal partial class Program
     private static void Main(string[] args)
     {
         int[] array = CreateArray();
-        Console.WriteLine($"[{String.Join(", ", array)}]");        
+        PrintArray(array);
     }
 
     static int[] CreateArray()
@@ -22,5 +22,10 @@ internal partial class Program
             array[i] = random.Next(100);
         }
         return array;
+    }
+
+    static void PrintArray(int[] array)
+    {
+        Console.WriteLine($"[{String.Join(", ", array)}]");
     }
 }
