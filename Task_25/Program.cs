@@ -20,7 +20,7 @@ internal class Program
         System.Console.WriteLine($"{a}, {b} -> {Math.Pow(a, b)}");
     }
 
-    private static void ShowExponentiationNumber(int a, int b)
+    static void ShowExponentiationNumber(int a, int b)
     {
         int result = a;
         for (int i = 1; i < b; i++)
