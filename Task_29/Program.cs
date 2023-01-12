@@ -16,7 +16,7 @@ internal partial class Program
 
     static int[] CreateRandomArray()
     {
-        int arrayLength = Numbers.EnterNumber("Введите длину массива");
+        int arrayLength = Numbers.EnterNumber("Введите длину рандомного массива");
         int[] array = new int[arrayLength];
         Random random = new Random();
         for (int i = 0; i < arrayLength; i++)
